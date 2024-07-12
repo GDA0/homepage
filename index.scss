@@ -66,9 +66,7 @@ body {
   }
 
   footer {
-    .contact-info {
-      background-color: #0891b2;
-    }
+    background-color: #0891b2;
   }
 }
 
@@ -87,5 +85,25 @@ body {
 @media (min-width: 376px) and (max-width: 425px) {
   .drop-shadow-container {
     margin-bottom: 32%;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  footer {
+    position: relative;
+    .contact-info {
+      max-width: 50%;
+
+      .animated-icons {
+        justify-content: start !important;
+      }
+    }
+
+    .footer-image {
+      max-width: 50%;
+      right: 1.25%;
+      top: 5%;
+      position: absolute;
+    }
   }
 }
