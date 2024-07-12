@@ -1,0 +1,34 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
+
+/* Defaults */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  .contact-info {
+    background-color: #0891b2;
+
+    .social-icons {
+      > div {
+        transition: transform 0.3s ease-in-out;
+        will-change: transform;
+
+        &:hover {
+          transform: rotate(360deg);
+        }
+      }
+      a {
+        color: black;
+      }
+    }
+  }
+}

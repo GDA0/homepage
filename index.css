@@ -1,6 +1,5 @@
 /* Import Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap");
-
 /* Defaults */
 h1,
 h2,
@@ -14,3 +13,18 @@ h6 {
 body {
   font-family: "Roboto", sans-serif;
 }
+body .contact-info {
+  background-color: #0891b2;
+}
+body .contact-info .social-icons > div {
+  transition: transform 0.3s ease-in-out;
+  will-change: transform;
+}
+body .contact-info .social-icons > div:hover {
+  transform: rotate(360deg);
+}
+body .contact-info .social-icons a {
+  color: black;
+}
+
+/*# sourceMappingURL=index.css.map */
