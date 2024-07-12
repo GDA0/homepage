@@ -10,8 +10,36 @@ h6 {
   font-family: "Montserrat", sans-serif;
 }
 
+.animated-icons > div {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+.animated-icons > div a {
+  color: black;
+}
+.animated-icons > div:hover {
+  transform: rotate(360deg);
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+body header .drop-shadow-container {
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.25));
+}
+body header .header-background-design {
+  position: relative;
+  background-color: #0891b2;
+  width: 100%;
+  height: 50vh;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 64%, 0% 100%);
+}
+body header .hero-container {
+  top: 5%;
+}
+body header .hero-container .hero-text {
+  left: 2.5%;
+  bottom: 0;
 }
 body main .projects > div {
   transition: transform 0.3s;
@@ -20,28 +48,24 @@ body main .projects > div {
 body main .projects > div:hover {
   transform: translateY(-4px);
 }
-body main .project-links > div {
-  transition: transform 0.5s;
-  will-change: transform;
-}
-body main .project-links > div a {
-  color: black;
-}
-body main .project-links > div:hover {
-  transform: rotate(360deg);
-}
 body footer .contact-info {
   background-color: #0891b2;
 }
-body footer .contact-info .social-icons > div {
-  transition: transform 0.5s;
-  will-change: transform;
+
+@media (max-width: 320px) {
+  .drop-shadow-container {
+    margin-bottom: 12%;
+  }
 }
-body footer .contact-info .social-icons > div a {
-  color: black;
+@media (min-width: 321px) and (max-width: 375px) {
+  .drop-shadow-container {
+    margin-bottom: 22%;
+  }
 }
-body footer .contact-info .social-icons > div:hover {
-  transform: rotate(360deg);
+@media (min-width: 376px) and (max-width: 425px) {
+  .drop-shadow-container {
+    margin-bottom: 32%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
