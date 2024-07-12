@@ -13,18 +13,35 @@ h6 {
 body {
   font-family: "Roboto", sans-serif;
 }
-body .contact-info {
-  background-color: #0891b2;
-}
-body .contact-info .social-icons > div {
-  transition: transform 0.3s ease-in-out;
+body main .projects > div {
+  transition: transform 0.3s;
   will-change: transform;
 }
-body .contact-info .social-icons > div:hover {
+body main .projects > div:hover {
+  transform: translateY(-4px);
+}
+body main .project-links > div {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+body main .project-links > div a {
+  color: black;
+}
+body main .project-links > div:hover {
   transform: rotate(360deg);
 }
-body .contact-info .social-icons a {
+body footer .contact-info {
+  background-color: #0891b2;
+}
+body footer .contact-info .social-icons > div {
+  transition: transform 0.5s;
+  will-change: transform;
+}
+body footer .contact-info .social-icons > div a {
   color: black;
+}
+body footer .contact-info .social-icons > div:hover {
+  transform: rotate(360deg);
 }
 
 /*# sourceMappingURL=index.css.map */
