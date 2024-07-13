@@ -57,6 +57,10 @@ body {
   }
 
   main {
+    .my-work {
+      text-align: center;
+    }
+
     .projects {
       > div {
         transition: transform 0.3s;
@@ -130,6 +134,13 @@ body {
           justify-content: flex-end;
         }
       }
+    }
+  }
+
+  main {
+    .my-work {
+      text-align: left !important;
+      margin-bottom: 0;
     }
   }
 
