@@ -44,66 +44,57 @@
   </head>
   <body>
     <header>
-      <div class="drop-shadow-container position-relative">
-        <div class="header-background-design"></div>
-        <div class="position-absolute container hero-container">
-          <div class="position-relative">
-            <img
-              class="img-fluid"
-              src="assets/images/image-1.jpg"
-              alt="Author's image"
-            />
-            <h1
-              class="fw-bold text-white position-absolute hero-text display-3 lead"
-            >
-              Gideon <span class="text-nowrap">Delali Adeti</span>
-            </h1>
-          </div>
+      <div
+        class="header-background-design shadow w-100 h-100 position-absolute z-n1"
+      ></div>
+      <div class="hero-container mt-1 p-3 d-flex flex-column gap-4">
+        <div class="image-and-name shadow position-relative">
+          <img
+            class="img-fluid"
+            src="assets/images/image-1.jpg"
+            alt="Author's image"
+          />
+          <h1
+            class="hero-name position-absolute bottom-0 lead display-1 text-white"
+          >
+            Gideon <span class="text-nowrap">Delali Adeti</span>
+          </h1>
         </div>
-      </div>
-      <div class="about-me">
-        <h2 class="text-center fw-bold">About me</h2>
-        <div class="container">
+        <div class="about-me">
+          <h2 class="text-center">About me</h2>
           <p>
             Hi, I'm Gideon Delali Adeti, a full-stack web developer specializing
-            in the MERN stack (MongoDB, Express.js, React.js, and Node.js).
-          </p>
-          <p>
-            I have a strong understanding of the MERN stack, enabling me to
+            in the MERN stack (MongoDB, Express.js, React.js, and Node.js). I
+            have a strong understanding of the MERN stack, enabling me to
             integrate front-end and back-end development for efficient
-            application creation.
+            application creation. My self-taught background has fostered a
+            strong work ethic and a love for continuous learning. Moreover, I
+            thrive in collaborative environments, eager to learn and contribute.
           </p>
+          <div
+            class="text-center fs-3 animated-icons d-flex justify-content-center gap-3"
+          >
+            <div>
+              <a href="https://github.com/GDA0" target="_blank"
+                ><i class="bi bi-github"></i
+              ></a>
+            </div>
 
-          <p>
-            My self-taught background has fostered a strong work ethic and a
-            love for continuous learning.
-          </p>
-          <p>
-            Moreover, I thrive in collaborative environments, eager to learn and
-            contribute.
-          </p>
-        </div>
-        <div
-          class="text-center fs-3 animated-icons d-flex justify-content-center gap-3"
-        >
-          <div>
-            <a href="https://github.com/GDA0" target="_blank"
-              ><i class="bi bi-github"></i
-            ></a>
-          </div>
-
-          <div>
-            <a href="https://www.linkedin.com/in/gideon-delali-adeti/"
-              ><i class="bi bi-linkedin"></i
-            ></a>
-          </div>
-          <div>
-            <a href="https://x.com/g_d_a_0"><i class="bi bi-twitter-x"></i></a>
+            <div>
+              <a href="https://www.linkedin.com/in/gideon-delali-adeti/"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+            </div>
+            <div>
+              <a href="https://x.com/g_d_a_0"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </header>
-    <main class="my-5 pb-5">
+    <main class="my-5">
       <h2 class="text-center fw-bold">My work</h2>
       <div
         class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-3 container mx-auto mt-1 mt-md-2 projects"
