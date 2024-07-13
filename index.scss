@@ -139,6 +139,23 @@ body {
 }
 
 @media (min-width: 426px) {
+  header {
+    .hero-container {
+      max-width: 96%;
+      margin: 1rem auto;
+
+      .about-me {
+        padding: 1rem;
+        background-color: white;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+        .animated-icons {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
   main {
     .my-work {
       text-align: left !important;
@@ -170,11 +187,53 @@ body {
 }
 
 @media (min-width: 769px) {
+  header {
+    .header-background-design {
+      transform: skewY(-15deg) translateY(-60%) !important;
+    }
+
+    .hero-container {
+      flex-direction: row !important;
+      align-items: center;
+      justify-content: center;
+      gap: 0 !important;
+
+      .image-and-name {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+      .about-me {
+        max-width: 60%;
+      }
+    }
+  }
   footer {
     padding: 5rem 2.5rem;
 
     .footer-image {
       top: 10%;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  header {
+    .header-background-design {
+      transform: skewY(-15deg) translateY(-70%) !important;
+    }
+
+    .about-me {
+      max-width: unset !important;
+    }
+  }
+
+  footer {
+    .footer-image {
+      top: 5%;
+      width: 60%;
+      height: auto;
     }
   }
 }

@@ -105,6 +105,18 @@ body footer {
   }
 }
 @media (min-width: 426px) {
+  header .hero-container {
+    max-width: 96%;
+    margin: 1rem auto;
+  }
+  header .hero-container .about-me {
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  header .hero-container .about-me .animated-icons {
+    justify-content: flex-end;
+  }
   main .my-work {
     text-align: left !important;
     margin-bottom: 0;
@@ -129,11 +141,39 @@ body footer {
   }
 }
 @media (min-width: 769px) {
+  header .header-background-design {
+    transform: skewY(-15deg) translateY(-60%) !important;
+  }
+  header .hero-container {
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 !important;
+  }
+  header .hero-container .image-and-name h1 {
+    font-size: 3rem;
+  }
+  header .hero-container .about-me {
+    max-width: 60%;
+  }
   footer {
     padding: 5rem 2.5rem;
   }
   footer .footer-image {
     top: 10%;
+  }
+}
+@media (min-width: 1025px) {
+  header .header-background-design {
+    transform: skewY(-15deg) translateY(-70%) !important;
+  }
+  header .about-me {
+    max-width: unset !important;
+  }
+  footer .footer-image {
+    top: 5%;
+    width: 60%;
+    height: auto;
   }
 }
 
