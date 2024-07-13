@@ -103,6 +103,8 @@ body footer {
   header .hero-container .about-me .animated-icons {
     justify-content: flex-end;
   }
+}
+@media (min-width: 426px) {
   main .my-work {
     text-align: left !important;
     margin-bottom: 0;
@@ -112,6 +114,7 @@ body footer {
     padding: 3rem 1.5rem;
   }
   footer .contact-info {
+    padding-left: 0 !important;
     max-width: 50%;
   }
   footer .contact-info .animated-icons {
@@ -121,7 +124,16 @@ body footer {
     max-width: 50%;
     right: 2.5%;
     top: 15%;
+    max-height: 90%;
     position: absolute;
+  }
+}
+@media (min-width: 769px) {
+  footer {
+    padding: 5rem 2.5rem;
+  }
+  footer .footer-image {
+    top: 10%;
   }
 }
 

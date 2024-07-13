@@ -136,7 +136,9 @@ body {
       }
     }
   }
+}
 
+@media (min-width: 426px) {
   main {
     .my-work {
       text-align: left !important;
@@ -149,6 +151,7 @@ body {
     padding: 3rem 1.5rem;
 
     .contact-info {
+      padding-left: 0 !important;
       max-width: 50%;
 
       .animated-icons {
@@ -160,7 +163,18 @@ body {
       max-width: 50%;
       right: 2.5%;
       top: 15%;
+      max-height: 90%;
       position: absolute;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  footer {
+    padding: 5rem 2.5rem;
+
+    .footer-image {
+      top: 10%;
     }
   }
 }
