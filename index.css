@@ -28,9 +28,20 @@ body header .header-background-design {
   background-color: #0891b2;
   transform: skewY(-15deg) translateY(-50%);
 }
-body header .hero-name {
+body header .hero-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+body header .hero-container .hero-name {
+  position: absolute;
+  bottom: 0;
   left: 2.5%;
   text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+body header .hero-container .animated-icons {
+  justify-content: center;
 }
 body main .projects > div {
   transition: transform 0.3s;
@@ -59,6 +70,36 @@ body footer {
   }
 }
 @media (min-width: 426px) and (max-width: 768px) {
+  header .hero-container {
+    display: block !important;
+    max-width: 96%;
+    margin: 1rem auto;
+  }
+  header .hero-container .image-and-name .hero-image {
+    max-width: 360px;
+    height: auto;
+    float: left;
+    margin-right: 0.75rem;
+  }
+  header .hero-container .image-and-name .hero-name {
+    font-size: calc(1rem + 4.5vw);
+    bottom: unset;
+    left: 48%;
+  }
+  header .hero-container .about-me {
+    background-color: white;
+    padding: 1rem;
+    padding-top: 3rem;
+    margin-top: 7.5rem;
+    margin-left: 3rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  }
+  header .hero-container .about-me p {
+    margin: 0.5rem;
+  }
+  header .hero-container .about-me .animated-icons {
+    justify-content: flex-end;
+  }
   footer {
     position: relative;
   }

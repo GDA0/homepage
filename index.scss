@@ -37,9 +37,22 @@ body {
       transform: skewY(-15deg) translateY(-50%);
     }
 
-    .hero-name {
-      left: 2.5%;
-      text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+    .hero-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 1rem;
+
+      .hero-name {
+        position: absolute;
+        bottom: 0;
+        left: 2.5%;
+        text-shadow: -2px 2px 4px rgba(0, 0, 0, 0.5);
+      }
+
+      .animated-icons {
+        justify-content: center;
+      }
     }
   }
 
@@ -80,6 +93,46 @@ body {
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
+  header {
+    .hero-container {
+      display: block !important;
+      max-width: 96%;
+      margin: 1rem auto;
+
+      .image-and-name {
+        .hero-image {
+          max-width: 360px;
+          height: auto;
+          float: left;
+          margin-right: 0.75rem;
+        }
+
+        .hero-name {
+          font-size: calc(1rem + 4.5vw);
+          bottom: unset;
+          left: 48%;
+        }
+      }
+
+      .about-me {
+        background-color: white;
+        padding: 1rem;
+        padding-top: 3rem;
+        margin-top: 7.5rem;
+        margin-left: 3rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+        p {
+          margin: 0.5rem;
+        }
+
+        .animated-icons {
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
   footer {
     position: relative;
 
